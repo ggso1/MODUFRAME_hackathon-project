@@ -188,3 +188,81 @@ pre {
         padding: 60px 0 30px;
         border-top: 1px solid var(--border);
     }
+
+        /*  Адаптація під мобільні пристрої  */
+    
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 60px;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            section {
+                padding: 40px 0;
+            }
+    
+            .hero {
+                min-height: 60vh;
+                padding-top: 40px;
+            }
+    
+            .hero h1 {
+                font-size: 42px;
+                line-height: 1.1;
+            }
+    
+            .section-title {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+    
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+    
+            .gallery-item {
+                height: 160px;
+            }
+    
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+    
+            .card {
+                padding: 20px;
+            }
+    
+            /* Кнопки */
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+    
+            /* Футер */
+            footer .container>div {
+                flex-direction: column;
+                text-align: center !important;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+    
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+    
+            pre {
+                font-size: 12px;
+                padding: 15px;
+            }
+    
+            .section-title {
+                font-size: 26px;
+            }
+        }
