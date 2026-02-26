@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODUFRAME | Smart Prototyping Ecosystem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="hero">
+            <div
+                style="background: rgba(16, 185, 129, 0.1); color: var(--accent); padding: 5px 15px; border-radius: 20px; font-size: 14px; font-weight: 700; margin-bottom: 20px;">
+                HACKATHON PROJECT</div>
+            <h1>MODUFRAME</h1>
+            <p style="font-size: 20px; color: #94a3b8; max-width: 800px; margin-bottom: 40px;">
+                Відкрита інженерна екосистема для швидкого прототипування. Гібридний підхід: 3D-друк складних вузлів +
+                доступні дерев’яні елементи.
+            </p>
+            <a href="https://drive.google.com/drive/folders/1SW2TmS_1yMoJctE2WU7eXELQ_zfjexau" target="_blank"
+                class="btn btn-main">
+                <i data-lucide="folder-open"></i> Документація та STL моделі
+            </a>
+        </section>
+
+        <section id="gallery">
+            <h2 class="section-title">Візуалізація системи</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="png/png1.png" alt="Screenshot 1"></div>
+                <div class="gallery-item"><img src="png/png2.png" alt="Screenshot 2"></div>
+                <div class="gallery-item"><img src="png/png3.png" alt="Screenshot 3"></div>
+                <div class="gallery-item"><img src="png/png4.png" alt="Screenshot 4"></div>
+                <div class="gallery-item"><img src="png/png5.png" alt="Screenshot 5"></div>
+                <div class="gallery-item"><img src="png/png6.jpg" alt="Screenshot 6"></div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">Про систему</h2>
+            <div class="grid">
+                <div class="card">
+                    <i data-lucide="layers"></i>
+                    <h3>Гібридна логіка</h3>
+                    <p>Пластикові з’єднувачі — це високоточне ядро. Дерево (бамбук, суші-палички) — легкі та жорсткі
+                        несучі балки. Це економить до 80% часу друку.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="sliders"></i>
+                    <h3>Повна параметризація</h3>
+                    <p>Завдяки OpenSCAD ви можете змінити масштаб системи (10-40 мм) або адаптувати отвори під будь-який
+                        матеріал одним кліком.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="microchip"></i>
+                    <h3>IoT Оптимізація</h3>
+                    <p>Спеціальні кріплення для ESP8266/ESP32 та сенсорів дозволяють збирати корпуси для метеостанцій за
+                        лічені хвилини.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Бібліотека з 17 моделей</h2>
+            <div class="grid">
+                <div>
+                    <h3 class="accent-text" style="margin-bottom: 20px;">Конструкційні вузли</h3>
+                    <ul class="doc-list">
+                        <li><strong>Cube:</strong> Універсальне ядро 90°.</li>
+                        <li><strong>Straight:</strong> Подовжувач балок.</li>
+                        <li><strong>L / T-Shape:</strong> Плоскі рамні вузли.</li>
+                        <li><strong>XYZ-Corner:</strong> Вершина для об'ємних боксів.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="accent-text" style="margin-bottom: 20px;">Спеціалізовані хаби</h3>
+                    <ul class="doc-list">
+                        <li><strong>Tripod:</strong> Опора 109.5° для стійкості.</li>
+                        <li><strong>Angle 45/135:</strong> Для ферм жорсткості.</li>
+                        <li><strong>Hex 60/120:</strong> Для стільникових структур.</li>
+                        <li><strong>Mount-Plate:</strong> Платформа для плат та сенсорів.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="accent-text" style="margin-bottom: 20px;">Кабельний менеджмент</h3>
+                    <ul class="doc-list">
+                        <li><strong>Clip-Zip:</strong> Під нейлонову стяжку.</li>
+                        <li><strong>Clip-Simple:</strong> Швидка організація дротів.</li>
+                        <li><strong>Clip-Hook:</strong> Гачок для антен та петель.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section style="background: rgba(255,255,255,0.02); border-radius: 30px; padding: 60px;">
+            <h2 class="section-title">Інструкція OpenSCAD</h2>
+            <div class="grid">
+                <div class="card">
+                    <h4>1. Налаштування</h4>
+                    <p>Відкрийте .scad файл, увімкніть <strong>Customizer</strong> та оберіть мову UKR.</p>
+                </div>
+                <div class="card">
+                    <h4>2. Параметри</h4>
+                    <p>Вкажіть <strong>System_Size</strong> (20 або 40) та оберіть тип паличок (Sushi, IceCream,
+                        Skewer).</p>
+                </div>
+                <div class="card">
+                    <h4>3. Crush Ribs</h4>
+                    <p>Увімкніть <strong>Use_Crush_Ribs</strong> для фіксації елементів "на суху" без використання клею.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Автоматизація: Batch Export</h2>
+            <p style="text-align: center; color: #94a3b8; margin-bottom: 30px;">Згенеруйте всю бібліотеку моделей за 60
+                секунд за допомогою CLI.</p>
+
+            <div class="grid">
+                <div>
+                    <h4>Windows (Batch)</h4>
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="dot" style="background: #ff5f56;"></div>
+                            <div class="dot" style="background: #ffbd2e;"></div>
+                            <div class="dot" style="background: #27c93f;"></div>
+                            <span style="font-size: 12px; color: #475569;">build_all.bat</span>
+                        </div>
+                        <pre>@echo off
+for %%P in (cube straight_L l_shape t_shape 
+angle_45 xyz_corner tripod reducer clip_zip) do (
+  openscad -o "STL/%%P.stl" -D "Part_Type=\"%%P\""
+)
+pause</pre>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Linux / macOS (Bash)</h4>
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="dot" style="background: #ff5f56;"></div>
+                            <div class="dot" style="background: #ffbd2e;"></div>
+                            <div class="dot" style="background: #27c93f;"></div>
+                            <span style="font-size: 12px; color: #475569;">build_all.sh</span>
+                        </div>
+                        <pre>#!/bin/bash
+parts=("cube" "tripod" "mount_plate")
+for p in "${parts[@]}"; do
+  openscad -o "STL/$p.stl" -D "Part_Type=\"$p\"" 
+done</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <div>
+                    <div style="font-size: 24px; font-weight: 800;">MODU<span>FRAME</span></div>
+                    <p style="color: #64748b; font-size: 14px;">Open-source ecosystem for rapid prototyping.</p>
+                </div>
+                <div style="text-align: right; color: #475569; font-size: 13px;">
+                    Розроблено командою "Вас відраховано🦄" <br>
+                    © 2026. Всі права захищені.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
