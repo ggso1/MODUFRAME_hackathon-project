@@ -233,6 +233,13 @@ footer {
     border-top: 1px solid var(--border);
 }
 
+/* make footer content span entire viewport */
+footer .container {
+    max-width: none;
+    margin: 0;
+    padding: 0 12px;
+}
+
 /*  Адаптація під мобільні пристрої  */
 
 @media (max-width: 1024px) {

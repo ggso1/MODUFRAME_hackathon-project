@@ -2,174 +2,174 @@
 <html lang="uk">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MODUFRAME | Smart Prototyping Ecosystem</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MODUFRAME | Smart Prototyping Ecosystem</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <section class="hero">
-            <div
-                style="background: rgba(16, 185, 129, 0.1); color: var(--accent); padding: 5px 15px; border-radius: 20px; font-size: 14px; font-weight: 700; margin-bottom: 20px;">
-                HACKATHON PROJECT</div>
-            <h1>MODUFRAME</h1>
-            <!-- <div ><img src="png/logo.png"></div> -->
-            <p style="font-size: 20px; color: #94a3b8; max-width: 800px; margin-bottom: 40px;">
-                Відкрита інженерна екосистема для швидкого прототипування. Гібридний підхід: 3D-друк складних вузлів +
-                доступні дерев’яні елементи.
-            </p>
-            <a href="https://drive.google.com/drive/folders/1SW2TmS_1yMoJctE2WU7eXELQ_zfjexau" target="_blank"
-                class="btn btn-main">
-                <i data-lucide="folder-open"></i> Документація та STL моделі
-            </a>
-        </section>
+  <div class="container">
+    <section class="hero">
+      <div
+        style="background: rgba(16, 185, 129, 0.1); color: var(--accent); padding: 5px 15px; border-radius: 20px; font-size: 14px; font-weight: 700; margin-bottom: 20px;">
+        HACKATHON PROJECT</div>
+      <h1>MODUFRAME</h1>
+      <!-- <div ><img src="png/logo.png"></div> -->
+      <p style="font-size: 20px; color: #94a3b8; max-width: 800px; margin-bottom: 40px;">
+        Відкрита інженерна екосистема для швидкого прототипування. Гібридний підхід: 3D-друк складних вузлів +
+        доступні дерев’яні елементи.
+      </p>
+      <a href="https://drive.google.com/drive/folders/1SW2TmS_1yMoJctE2WU7eXELQ_zfjexau" target="_blank"
+        class="btn btn-main">
+        <i data-lucide="folder-open"></i> Документація та STL моделі
+      </a>
+    </section>
 
-        <section id="gallery">
-            <h2 class="section-title">Візуалізація системи</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="png/png1.png" alt="Screenshot 1"></div>
-                <div class="gallery-item"><img src="png/png2.png" alt="Screenshot 2"></div>
-                <div class="gallery-item"><img src="png/png3.png" alt="Screenshot 3"></div>
-                <div class="gallery-item"><img src="png/png4.png" alt="Screenshot 4"></div>
-                <div class="gallery-item"><img src="png/png5.png" alt="Screenshot 5"></div>
-                <div class="gallery-item"><img src="png/png6.jpg" alt="Screenshot 6"></div>
+    <section id="gallery">
+      <h2 class="section-title">Візуалізація системи</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="png/png1.png" alt="Screenshot 1"></div>
+        <div class="gallery-item"><img src="png/png2.png" alt="Screenshot 2"></div>
+        <div class="gallery-item"><img src="png/png3.png" alt="Screenshot 3"></div>
+        <div class="gallery-item"><img src="png/png4.png" alt="Screenshot 4"></div>
+        <div class="gallery-item"><img src="png/png5.png" alt="Screenshot 5"></div>
+        <div class="gallery-item"><img src="png/png6.jpg" alt="Screenshot 6"></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">Про систему</h2>
+      <div class="grid">
+        <div class="card">
+          <i data-lucide="layers"></i>
+          <h3>Гібридна логіка</h3>
+          <p>Пластикові з’єднувачі — це високоточне ядро. Дерево (бамбук, суші-палички) — легкі та жорсткі
+            несучі балки. Це економить до 80% часу друку.</p>
+        </div>
+        <div class="card">
+          <i data-lucide="sliders"></i>
+          <h3>Повна параметризація</h3>
+          <p>Завдяки OpenSCAD ви можете змінити масштаб системи (10-40 мм) або адаптувати отвори під будь-який
+            матеріал одним кліком.</p>
+        </div>
+        <div class="card">
+          <i data-lucide="microchip"></i>
+          <h3>IoT Оптимізація</h3>
+          <p>Спеціальні кріплення для ESP8266/ESP32 та сенсорів дозволяють збирати корпуси для метеостанцій за
+            лічені хвилини.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Бібліотека з 17 моделей</h2>
+      <div class="grid">
+        <div>
+          <h3 class="accent-text" style="margin-bottom: 20px;">Конструкційні вузли</h3>
+          <ul class="doc-list">
+            <li><strong>Cube:</strong> Універсальне ядро 90°.</li>
+            <li><strong>Straight:</strong> Подовжувач балок.</li>
+            <li><strong>L / T-Shape:</strong> Плоскі рамні вузли.</li>
+            <li><strong>XYZ-Corner:</strong> Вершина для об'ємних боксів.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="accent-text" style="margin-bottom: 20px;">Спеціалізовані хаби</h3>
+          <ul class="doc-list">
+            <li><strong>Tripod:</strong> Опора 109.5° для стійкості.</li>
+            <li><strong>Angle 45/135:</strong> Для ферм жорсткості.</li>
+            <li><strong>Hex 60/120:</strong> Для стільникових структур.</li>
+            <li><strong>Mount-Plate:</strong> Платформа для плат та сенсорів.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="accent-text" style="margin-bottom: 20px;">Кабельний менеджмент</h3>
+          <ul class="doc-list">
+            <li><strong>Clip-Zip:</strong> Під нейлонову стяжку.</li>
+            <li><strong>Clip-Simple:</strong> Швидка організація дротів.</li>
+            <li><strong>Clip-Hook:</strong> Гачок для антен та петель.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="carousel" id="carousel">
+        <div class="track" id="track">
+          <div class="slide"><img src="png/1.png"></div>
+          <div class="slide"><img src="png/2.png"></div>
+          <div class="slide"><img src="png/3.png"></div>
+          <div class="slide"><img src="png/4.png"></div>
+          <div class="slide"><img src="png/5.png"></div>
+          <div class="slide"><img src="png/6.png"></div>
+          <div class="slide"><img src="png/7.png"></div>
+          <div class="slide"><img src="png/8.png"></div>
+          <div class="slide"><img src="png/9.png"></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: rgba(255,255,255,0.02); border-radius: 30px; padding: 60px;">
+      <h2 class="section-title">Інструкція</h2>
+      <div class="grid">
+        <div class="card">
+          <h4>1. Налаштування</h4>
+          <p>Відкрийте .scad файл, увімкніть <strong>Customizer</strong> та оберіть мову UKR.</p>
+        </div>
+        <div class="card">
+          <h4>2. Параметри</h4>
+          <p>Вкажіть <strong>System_Size</strong> (20 або 40) та оберіть тип паличок (Sushi, IceCream,
+            Skewer).</p>
+        </div>
+        <div class="card">
+          <h4>3. Crush Ribs</h4>
+          <p>Увімкніть <strong>Use_Crush_Ribs</strong> для фіксації елементів "на суху" без використання клею.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Створення деталей</h2>
+      <p style="text-align: center; color: #94a3b8; margin-bottom: 30px;">Згенеруйте всю бібліотеку моделей за 60
+        секунд.</p>
+
+      <div class="grid two-cols">
+        <div>
+          <h4>САЙТ</h4>
+          <div class="code-window">
+            <div class="code-header">
+              <div class="dot" style="background: #ff5f56;"></div>
+              <div class="dot" style="background: #ffbd2e;"></div>
+              <div class="dot" style="background: #27c93f;"></div>
+              <span style="font-size: 12px; color: #475569;">info.txt</span>
             </div>
-        </section>
-
-        <section id="about">
-            <h2 class="section-title">Про систему</h2>
-            <div class="grid">
-                <div class="card">
-                    <i data-lucide="layers"></i>
-                    <h3>Гібридна логіка</h3>
-                    <p>Пластикові з’єднувачі — це високоточне ядро. Дерево (бамбук, суші-палички) — легкі та жорсткі
-                        несучі балки. Це економить до 80% часу друку.</p>
-                </div>
-                <div class="card">
-                    <i data-lucide="sliders"></i>
-                    <h3>Повна параметризація</h3>
-                    <p>Завдяки OpenSCAD ви можете змінити масштаб системи (10-40 мм) або адаптувати отвори під будь-який
-                        матеріал одним кліком.</p>
-                </div>
-                <div class="card">
-                    <i data-lucide="microchip"></i>
-                    <h3>IoT Оптимізація</h3>
-                    <p>Спеціальні кріплення для ESP8266/ESP32 та сенсорів дозволяють збирати корпуси для метеостанцій за
-                        лічені хвилини.</p>
-                </div>
+            <div class="code-desc">
+              <a href="https://openjscad.xyz/#" target="_blank" class="accent-text">OpenJSCAD</a>
+              <h4 style="margin:6px 0 8px;">🔧 Що це за сайт</h4>
+              <ul class="doc-list">
+                <li>онлайн-CAD без встановлення</li>
+                <li>генератор 3D-моделей через код</li>
+                <li>інструмент для параметричних деталей</li>
+                <li>viewer + редактор в одному вікні</li>
+                <li>Ти пишеш JS → одразу бачиш 3D-модель.</li>
+              </ul>
             </div>
-        </section>
-
-        <section>
-            <h2 class="section-title">Бібліотека з 17 моделей</h2>
-            <div class="grid">
-                <div>
-                    <h3 class="accent-text" style="margin-bottom: 20px;">Конструкційні вузли</h3>
-                    <ul class="doc-list">
-                        <li><strong>Cube:</strong> Універсальне ядро 90°.</li>
-                        <li><strong>Straight:</strong> Подовжувач балок.</li>
-                        <li><strong>L / T-Shape:</strong> Плоскі рамні вузли.</li>
-                        <li><strong>XYZ-Corner:</strong> Вершина для об'ємних боксів.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="accent-text" style="margin-bottom: 20px;">Спеціалізовані хаби</h3>
-                    <ul class="doc-list">
-                        <li><strong>Tripod:</strong> Опора 109.5° для стійкості.</li>
-                        <li><strong>Angle 45/135:</strong> Для ферм жорсткості.</li>
-                        <li><strong>Hex 60/120:</strong> Для стільникових структур.</li>
-                        <li><strong>Mount-Plate:</strong> Платформа для плат та сенсорів.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="accent-text" style="margin-bottom: 20px;">Кабельний менеджмент</h3>
-                    <ul class="doc-list">
-                        <li><strong>Clip-Zip:</strong> Під нейлонову стяжку.</li>
-                        <li><strong>Clip-Simple:</strong> Швидка організація дротів.</li>
-                        <li><strong>Clip-Hook:</strong> Гачок для антен та петель.</li>
-                    </ul>
-                </div>
+          </div>
+        </div>
+        <div>
+          <h4>КОД ДЛЯ МОДЕЛЮВАННЯ</h4>
+          <div class="code-window">
+            <div class="code-header">
+              <div class="dot" style="background: #ff5f56;"></div>
+              <div class="dot" style="background: #ffbd2e;"></div>
+              <div class="dot" style="background: #27c93f;"></div>
+              <span style="font-size: 12px; color: #475569;">moduframe.js</span>
             </div>
-
-            <div class="carousel" id="carousel">
-                <div class="track" id="track">
-                    <div class="slide"><img src="png/1.png"></div>
-                    <div class="slide"><img src="png/2.png"></div>
-                    <div class="slide"><img src="png/3.png"></div>
-                    <div class="slide"><img src="png/4.png"></div>
-                    <div class="slide"><img src="png/5.png"></div>
-                    <div class="slide"><img src="png/6.png"></div>
-                    <div class="slide"><img src="png/7.png"></div>
-                    <div class="slide"><img src="png/8.png"></div>
-                    <div class="slide"><img src="png/9.png"></div>
-                </div>
-            </div>
-        </section>
-
-        <section style="background: rgba(255,255,255,0.02); border-radius: 30px; padding: 60px;">
-            <h2 class="section-title">Інструкція</h2>
-            <div class="grid">
-                <div class="card">
-                    <h4>1. Налаштування</h4>
-                    <p>Відкрийте .scad файл, увімкніть <strong>Customizer</strong> та оберіть мову UKR.</p>
-                </div>
-                <div class="card">
-                    <h4>2. Параметри</h4>
-                    <p>Вкажіть <strong>System_Size</strong> (20 або 40) та оберіть тип паличок (Sushi, IceCream,
-                        Skewer).</p>
-                </div>
-                <div class="card">
-                    <h4>3. Crush Ribs</h4>
-                    <p>Увімкніть <strong>Use_Crush_Ribs</strong> для фіксації елементів "на суху" без використання клею.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2 class="section-title">Створення деталей</h2>
-            <p style="text-align: center; color: #94a3b8; margin-bottom: 30px;">Згенеруйте всю бібліотеку моделей за 60
-                секунд.</p>
-
-            <div class="grid two-cols">
-                <div>
-                    <h4>САЙТ</h4>
-                    <div class="code-window">
-                        <div class="code-header">
-                            <div class="dot" style="background: #ff5f56;"></div>
-                            <div class="dot" style="background: #ffbd2e;"></div>
-                            <div class="dot" style="background: #27c93f;"></div>
-                            <span style="font-size: 12px; color: #475569;">info.txt</span>
-                        </div>
-                        <div class="code-desc">
-                            <a href="https://openjscad.xyz/#" target="_blank" class="accent-text">OpenJSCAD</a>
-                            <h4 style="margin:6px 0 8px;">🔧 Що це за сайт</h4>
-                            <ul class="doc-list">
-                                <li>онлайн-CAD без встановлення</li>
-                                <li>генератор 3D-моделей через код</li>
-                                <li>інструмент для параметричних деталей</li>
-                                <li>viewer + редактор в одному вікні</li>
-                                <li>Ти пишеш JS → одразу бачиш 3D-модель.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h4>КОД ДЛЯ МОДЕЛЮВАННЯ</h4>
-                    <div class="code-window">
-                        <div class="code-header">
-                            <div class="dot" style="background: #ff5f56;"></div>
-                            <div class="dot" style="background: #ffbd2e;"></div>
-                            <div class="dot" style="background: #27c93f;"></div>
-                            <span style="font-size: 12px; color: #475569;">moduframe.js</span>
-                        </div>
-                        <pre>/**
+            <pre>/**
  * =========================================================================
  * MODUFRAME V6.0 — JSCAD ПОВНИЙ РЕФАКТОРИНГ
  * Порт з OpenSCAD V6.0
@@ -493,70 +493,104 @@ const main = (p) => {
 }
 
 module.exports = { main, getParameterDefinitions }</pre>
-                    </div>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="footer-carousel" id="footerCarousel" aria-label="footer image carousel">
-            <div class="fc-slide active"><img src="png/mocup_2.png" alt="mockup 2"></div>
-            <div class="fc-slide"><img src="png/mocup_1.png" alt="mockup 1"></div>
-            <button class="fc-btn prev" id="fcPrev" aria-label="Previous">‹</button>
-            <button class="fc-btn next" id="fcNext" aria-label="Next">›</button>
+    <section>
+      <h2 class="section-title">Створення деталей в OpenSCAD</h2>
+      <div class="grid">
+
+        <div>
+          <h4>Windows (Batch)</h4>
+          <div class="code-window">
+            <div class="code-header">
+              <div class="dot" style="background: #ff5f56;"></div>
+              <div class="dot" style="background: #ffbd2e;"></div>
+              <div class="dot" style="background: #27c93f;"></div>
+              <span style="font-size: 12px; color: #475569;">build_all.bat</span>
+            </div>
+            <pre>@echo off
+        for %%P in (cube straight_L l_shape t_shape 
+        angle_45 xyz_corner tripod reducer clip_zip) do (
+          openscad -o "STL/%%P.stl" -D "Part_Type=\"%%P\""
+        )
+        pause</pre>
+          </div>
         </div>
 
-        <footer>
-            <div class="container">
-                <div
-                    style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-                    <div>
-                        <div style="font-size: 24px; font-weight: 800;">MODU<span>FRAME</span></div>
-                        <p style="color: #64748b; font-size: 14px;">Open-source ecosystem for rapid prototyping.</p>
-                    </div>
-                    <div style="text-align: right; color: #475569; font-size: 13px;">
-                        Розроблено командою "Вас відраховано🦄" <br>
-                        © 2026. Всі права захищені.
-                    </div>
-                </div>
+        <div>
+          <h4>Linux / macOS (Bash)</h4>
+          <div class="code-window">
+            <div class="code-header">
+              <div class="dot" style="background: #ff5f56;"></div>
+              <div class="dot" style="background: #ffbd2e;"></div>
+              <div class="dot" style="background: #27c93f;"></div>
+              <span style="font-size: 12px; color: #475569;">build_all.sh</span>
             </div>
-        </footer>
+            <pre>#!/bin/bash
+        parts=("cube" "tripod" "mount_plate")
+        for p in "${parts[@]}"; do
+          openscad -o "STL/$p.stl" -D "Part_Type=\"$p\"" 
+        done</pre>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <script>lucide.createIcons();</script>
-        <script>
-            const slides = document.querySelectorAll('.slide');
-            const carousel = document.getElementById('carousel');
+    
+    <footer>
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+          <div>
+            <div style="font-size: 1.5rem; font-weight: 800;">MODU<span>FRAME</span></div>
+            <p style="color: #64748b; font-size: 14px;">Open-source ecosystem for rapid prototyping.</p>
+          </div>
+          <div style="text-align: right; color: #475569; font-size: 13px;">
+            Розроблено командою "Вас відраховано🦄" <br>
+            Спеціально для Хакатону 2024.
+          </div>
+        </div>
+      </div>
+    </footer>
 
-            let current = 0;
-            let autoPlay = true;
-            let startX = 0;
-            let isDragging = false;
-            let animationFrame;
+    <script>lucide.createIcons();</script>
+    <script>
+      const slides = document.querySelectorAll('.slide');
+      const carousel = document.getElementById('carousel');
 
-            // Адаптивні параметри каруселі залежно від ширини екрана
-            function getCarouselParams() {
-                const width = window.innerWidth;
-                if (width <= 480) {
-                    return { spacing: 140, depth: 280, rotate: 35 };
-                } else if (width <= 768) {
-                    return { spacing: 180, depth: 360, rotate: 40 };
-                } else {
-                    return { spacing: 260, depth: 500, rotate: 45 };
-                }
-            }
+      let current = 0;
+      let autoPlay = true;
+      let startX = 0;
+      let isDragging = false;
+      let animationFrame;
 
-            let params = getCarouselParams();
+      // Адаптивні параметри каруселі залежно від ширини екрана
+      function getCarouselParams() {
+        const width = window.innerWidth;
+        if (width <= 480) {
+          return { spacing: 140, depth: 280, rotate: 35 };
+        } else if (width <= 768) {
+          return { spacing: 180, depth: 360, rotate: 40 };
+        } else {
+          return { spacing: 260, depth: 500, rotate: 45 };
+        }
+      }
 
-            function render() {
-                slides.forEach((slide, i) => {
-                    let offset = i - current;
+      let params = getCarouselParams();
 
-                    // Infinite loop logic
-                    if (offset > slides.length / 2) offset -= slides.length;
-                    if (offset < -slides.length / 2) offset += slides.length;
+      function render() {
+        slides.forEach((slide, i) => {
+          let offset = i - current;
 
-                    const abs = Math.abs(offset);
+          // Infinite loop logic
+          if (offset > slides.length / 2) offset -= slides.length;
+          if (offset < -slides.length / 2) offset += slides.length;
 
-                    slide.style.transform = `
+          const abs = Math.abs(offset);
+
+          slide.style.transform = `
       translate(-50%, -50%)
       translateX(${offset * params.spacing}px)
       translateZ(${-abs * params.depth}px)
@@ -564,92 +598,92 @@ module.exports = { main, getParameterDefinitions }</pre>
       scale(${abs === 0 ? 1 : 0.78})
     `;
 
-                    slide.style.opacity = abs > 4 ? 0 : 1;
-                    slide.style.zIndex = 100 - abs;
-                });
-            }
+          slide.style.opacity = abs > 4 ? 0 : 1;
+          slide.style.zIndex = 100 - abs;
+        });
+      }
 
-            function next() {
-                current = (current + 1) % slides.length;
-                render();
-            }
+      function next() {
+        current = (current + 1) % slides.length;
+        render();
+      }
 
-            function prev() {
-                current = (current - 1 + slides.length) % slides.length;
-                render();
-            }
+      function prev() {
+        current = (current - 1 + slides.length) % slides.length;
+        render();
+      }
 
-            /* ==== TOUCH + MOUSE DRAG ==== */
-            function onStart(x) {
-                isDragging = true;
-                autoPlay = false;
-                startX = x;
-            }
+      /* ==== TOUCH + MOUSE DRAG ==== */
+      function onStart(x) {
+        isDragging = true;
+        autoPlay = false;
+        startX = x;
+      }
 
-            function onMove(x) {
-                if (!isDragging) return;
-                const diff = x - startX;
+      function onMove(x) {
+        if (!isDragging) return;
+        const diff = x - startX;
 
-                if (Math.abs(diff) > 50) {
-                    if (diff > 0) prev();
-                    else next();
-                    isDragging = false;
-                }
-            }
+        if (Math.abs(diff) > 50) {
+          if (diff > 0) prev();
+          else next();
+          isDragging = false;
+        }
+      }
 
-            function onEnd() {
-                isDragging = false;
-                autoPlay = true;
-            }
+      function onEnd() {
+        isDragging = false;
+        autoPlay = true;
+      }
 
-            carousel.addEventListener('mousedown', e => onStart(e.clientX));
-            carousel.addEventListener('mousemove', e => onMove(e.clientX));
-            carousel.addEventListener('mouseup', onEnd);
-            carousel.addEventListener('mouseleave', onEnd);
+      carousel.addEventListener('mousedown', e => onStart(e.clientX));
+      carousel.addEventListener('mousemove', e => onMove(e.clientX));
+      carousel.addEventListener('mouseup', onEnd);
+      carousel.addEventListener('mouseleave', onEnd);
 
-            carousel.addEventListener('touchstart', e => onStart(e.touches[0].clientX), { passive: true });
-            carousel.addEventListener('touchmove', e => onMove(e.touches[0].clientX), { passive: true });
-            carousel.addEventListener('touchend', onEnd);
+      carousel.addEventListener('touchstart', e => onStart(e.touches[0].clientX), { passive: true });
+      carousel.addEventListener('touchmove', e => onMove(e.touches[0].clientX), { passive: true });
+      carousel.addEventListener('touchend', onEnd);
 
-            /* ==== АДАПТАЦІЯ ПРИ ЗМІНІ РОЗМІРУ ВІКНА ==== */
-            window.addEventListener('resize', () => {
-                params = getCarouselParams();
-                render();
-            });
+      /* ==== АДАПТАЦІЯ ПРИ ЗМІНІ РОЗМІРУ ВІКНА ==== */
+      window.addEventListener('resize', () => {
+        params = getCarouselParams();
+        render();
+      });
 
-            /* ==== AUTOPLAY LOOP ==== */
-            function autoLoop() {
-                if (autoPlay) next();
-                animationFrame = setTimeout(autoLoop, 3500);
-            }
+      /* ==== AUTOPLAY LOOP ==== */
+      function autoLoop() {
+        if (autoPlay) next();
+        animationFrame = setTimeout(autoLoop, 3500);
+      }
 
-            render();
-            autoLoop();
-        </script>
-        <script>
-            // Footer two-image carousel
-            (() => {
-                const carousel = document.getElementById('footerCarousel');
-                if (!carousel) return;
-                const slides = Array.from(carousel.querySelectorAll('.fc-slide'));
-                const prevBtn = document.getElementById('fcPrev');
-                const nextBtn = document.getElementById('fcNext');
-                let idx = 0;
-                let interval = null;
+      render();
+      autoLoop();
+    </script>
+    <script>
+      // Footer two-image carousel
+      (() => {
+        const carousel = document.getElementById('footerCarousel');
+        if (!carousel) return;
+        const slides = Array.from(carousel.querySelectorAll('.fc-slide'));
+        const prevBtn = document.getElementById('fcPrev');
+        const nextBtn = document.getElementById('fcNext');
+        let idx = 0;
+        let interval = null;
 
-                function show(i) {
-                    slides.forEach((s, k) => s.classList.toggle('active', k === i));
-                }
+        function show(i) {
+          slides.forEach((s, k) => s.classList.toggle('active', k === i));
+        }
 
-                function next() { idx = (idx + 1) % slides.length; show(idx); }
-                function prev() { idx = (idx - 1 + slides.length) % slides.length; show(idx); }
+        function next() { idx = (idx + 1) % slides.length; show(idx); }
+        function prev() { idx = (idx - 1 + slides.length) % slides.length; show(idx); }
 
-                prevBtn.addEventListener('click', () => { prev(); });
-                nextBtn.addEventListener('click', () => { next(); });
+        prevBtn.addEventListener('click', () => { prev(); });
+        nextBtn.addEventListener('click', () => { next(); });
 
-                show(idx);
-            })();
-        </script>
+        show(idx);
+      })();
+    </script>
 </body>
 
 </html>
