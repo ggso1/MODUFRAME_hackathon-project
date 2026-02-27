@@ -95,6 +95,21 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="carousel">
+  <div class="carousel-track" id="track">
+    <div class="slide"><img src="https://picsum.photos/id/1015/800/500"></div>
+    <div class="slide"><img src="https://picsum.photos/id/1016/800/500"></div>
+    <div class="slide"><img src="https://picsum.photos/id/1018/800/500"></div>
+    <div class="slide"><img src="https://picsum.photos/id/1020/800/500"></div>
+    <div class="slide"><img src="https://picsum.photos/id/1024/800/500"></div>
+  </div>
+
+  <div class="controls">
+    <button onclick="prev()">◀ Назад</button>
+    <button onclick="next()">Вперед ▶</button>
+  </div>
+</div>
         </section>
 
         <section style="background: rgba(255,255,255,0.02); border-radius: 30px; padding: 60px;">
@@ -178,6 +193,44 @@ done</pre>
     </footer>
 
     <script>lucide.createIcons();</script>
+    <script>
+const slides = document.querySelectorAll('.slide');
+let current = 0;
+
+function updateCarousel() {
+  slides.forEach((slide, i) => {
+    const offset = i - current;
+    const absOffset = Math.abs(offset);
+
+    let transform = `
+      translate(-50%, -50%)
+      translateX(${offset * 220}px)
+      translateZ(${absOffset === 0 ? 0 : -300}px)
+      rotateY(${offset * -35}deg)
+      scale(${absOffset === 0 ? 1 : 0.8})
+    `;
+
+    slide.style.transform = transform;
+    slide.style.opacity = absOffset > 2 ? 0 : 1;
+    slide.style.zIndex = 100 - absOffset;
+  });
+}
+
+function next() {
+  current = (current + 1) % slides.length;
+  updateCarousel();
+}
+
+function prev() {
+  current = (current - 1 + slides.length) % slides.length;
+  updateCarousel();
+}
+
+// автопрокрутка
+setInterval(next, 4000);
+
+updateCarousel();
+</script>
 </body>
 
 </html>
