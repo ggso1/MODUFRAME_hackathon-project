@@ -19,7 +19,7 @@
                 style="background: rgba(16, 185, 129, 0.1); color: var(--accent); padding: 5px 15px; border-radius: 20px; font-size: 14px; font-weight: 700; margin-bottom: 20px;">
                 HACKATHON PROJECT</div>
             <h1>MODUFRAME</h1>
-             <div ><img src="png/logo.png"></div>
+             <!-- <div ><img src="png/logo.png"></div> -->
             <p style="font-size: 20px; color: #94a3b8; max-width: 800px; margin-bottom: 40px;">
                 Відкрита інженерна екосистема для швидкого прототипування. Гібридний підхід: 3D-друк складних вузлів +
                 доступні дерев’яні елементи.
@@ -176,7 +176,12 @@ done</pre>
             </div>
         </section>
     </div>
-
+<div class="footer-carousel" id="footerCarousel" aria-label="footer image carousel">
+    <div class="fc-slide active"><img src="png/mocup_2.png" alt="mockup 2"></div>
+    <div class="fc-slide"><img src="png/mocup_1.png" alt="mockup 1"></div>
+    <button class="fc-btn prev" id="fcPrev" aria-label="Previous">‹</button>
+    <button class="fc-btn next" id="fcNext" aria-label="Next">›</button>
+</div>
     <footer>
         <div class="container">
             <div
@@ -281,6 +286,30 @@ function autoLoop() {
 
 render();
 autoLoop();
+</script>
+<script>
+// Footer two-image carousel
+(() => {
+    const carousel = document.getElementById('footerCarousel');
+    if (!carousel) return;
+    const slides = Array.from(carousel.querySelectorAll('.fc-slide'));
+    const prevBtn = document.getElementById('fcPrev');
+    const nextBtn = document.getElementById('fcNext');
+    let idx = 0;
+    let interval = null;
+
+    function show(i) {
+        slides.forEach((s, k) => s.classList.toggle('active', k === i));
+    }
+
+    function next() { idx = (idx + 1) % slides.length; show(idx); }
+    function prev() { idx = (idx - 1 + slides.length) % slides.length; show(idx); }
+
+    prevBtn.addEventListener('click', () => { prev(); });
+    nextBtn.addEventListener('click', () => { next(); });
+
+    show(idx);
+})();
 </script>
 </body>
 
