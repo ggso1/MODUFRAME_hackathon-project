@@ -25,7 +25,8 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 12px;
+    /* reduced horizontal padding */
 }
 
 section {
@@ -82,8 +83,31 @@ h4 {
     gap: 24px;
 }
 
+/* Two-column variant for specific sections (Batch Export) */
+.two-cols {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+}
+
+.two-cols>div {
+    flex: 1;
+    min-width: 0;
+}
+
+@media (max-width: 900px) {
+    .two-cols {
+        display: block;
+    }
+
+    .two-cols>div {
+        width: 100%;
+    }
+}
+
 .card {
-    padding: 30px;
+    padding: 24px;
+    /* slightly tighter cards */
     background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: 20px;
@@ -107,7 +131,7 @@ h4 {
     border-radius: 12px;
     border: 1px solid var(--border);
     margin-top: 20px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .code-header {
@@ -125,12 +149,25 @@ h4 {
 
 pre {
     padding: 20px;
-    overflow-x: auto;
+    overflow-y: auto;
+    /* vertical scroll only */
+    overflow-x: hidden;
+    /* prevent horizontal scrolling */
+    white-space: pre-wrap;
+    /* allow long lines to wrap */
+    word-break: break-word;
+    max-height: 360px;
+    /* limit height so large code blocks don't expand page */
     font-family: 'Courier New', monospace;
     font-size: 14px;
     color: #94a3b8;
+    margin: 0;
+    background: transparent;
 }
 
+.code-desc {
+    padding: 20px;
+}
 
 .doc-list {
     list-style: none;
@@ -177,141 +214,189 @@ pre {
     gap: 20px;
 }
 
+.gallery-item {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    height: 200px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background: #010409;
+    padding: 60px 0 30px;
+    border-top: 1px solid var(--border);
+}
+
+/*  Адаптація під мобільні пристрої  */
+
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    .hero {
+        min-height: 60vh;
+        padding-top: 40px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    .section-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
     .gallery-item {
-        border-radius: 15px;
-        overflow: hidden;
-        border: 1px solid var(--border);
-        height: 200px;
+        height: 160px;
     }
 
-    .gallery-item img {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    /* Кнопки */
+    .btn {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        justify-content: center;
     }
 
-    footer {
-        background: #010409;
-        padding: 60px 0 30px;
-        border-top: 1px solid var(--border);
+    /* Футер */
+    footer .container>div {
+        flex-direction: column;
+        text-align: center !important;
     }
 
-        /*  Адаптація під мобільні пристрої  */
-    
-        @media (max-width: 1024px) {
-            .hero h1 {
-                font-size: 60px;
-            }
-        }
-    
-        @media (max-width: 768px) {
-            section {
-                padding: 40px 0;
-            }
-    
-            .hero {
-                min-height: 60vh;
-                padding-top: 40px;
-            }
-    
-            .hero h1 {
-                font-size: 42px;
-                line-height: 1.1;
-            }
-    
-            .section-title {
-                font-size: 30px;
-                margin-bottom: 30px;
-            }
-    
-            .gallery-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 12px;
-            }
-    
-            .gallery-item {
-                height: 160px;
-            }
-    
-            .grid {
-                grid-template-columns: 1fr;
-                gap: 16px;
-            }
-    
-            .card {
-                padding: 20px;
-            }
-    
-            /* Кнопки */
-            .btn {
-                width: 100%;
-                justify-content: center;
-            }
-    
-            /* Футер */
-            footer .container>div {
-                flex-direction: column;
-                text-align: center !important;
-            }
-        }
-    
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 36px;
-            }
-    
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-    
-            pre {
-                font-size: 12px;
-                padding: 15px;
-            }
-    
-            .section-title {
-                font-size: 26px;
-            }
-        }
+    /* Карусель бібліотека */
+    .carousel {
+        height: 280px;
+        max-width: 90vw;
+    }
+
+    .slide {
+        width: 300px;
+        height: 190px;
+    }
+
+    .footer-carousel {
+        width: 420px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    pre {
+        font-size: 12px;
+        padding: 15px;
+        max-height: 220px;
+        /* smaller max-height on small screens */
+        white-space: pre-wrap;
+        word-break: break-word;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    /* Карусель на дуже малих екранах */
+    .carousel {
+        height: 220px;
+        max-width: 100%;
+    }
+
+    .slide {
+        width: 240px;
+        height: 150px;
+    }
+
+    .footer-carousel {
+        height: 120px;
+    }
+
+    .fc-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+}
 
 
 
 
 .carousel {
-  width: 100%;
-  max-width: 1000px;
-  height: 420px;
-  perspective: 1600px;
-  position: relative;
-  touch-action: pan-y;
+    width: 100%;
+    max-width: 1000px;
+    height: 420px;
+    perspective: 1600px;
+    position: relative;
+    touch-action: pan-y;
 }
 
 .track {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
 }
 
 .slide {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 420px;
-  height: 260px;
-  border-radius: 18px;
-  overflow: hidden;
-  transform-style: preserve-3d;
-  transition: transform 0.6s cubic-bezier(.25,.8,.25,1), opacity 0.6s;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.45);
-  user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 420px;
+    height: 260px;
+    border-radius: 18px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(.25, .8, .25, 1), opacity 0.6s;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+    user-select: none;
 }
 
 .slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  pointer-events: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
 }
 
 /* Footer two-image carousel (larger) */
@@ -323,7 +408,7 @@ pre {
     margin: 40px auto 20px;
     border-radius: 16px;
     overflow: hidden;
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
     border: 1px solid var(--border);
     display: flex;
     align-items: center;
@@ -356,7 +441,7 @@ pre {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.45);
+    background: rgba(0, 0, 0, 0.45);
     color: #fff;
     border: none;
     width: 44px;
@@ -370,14 +455,34 @@ pre {
     line-height: 1;
 }
 
-.fc-btn.prev { left: 12px; }
-.fc-btn.next { right: 12px; }
+.fc-btn.prev {
+    left: 12px;
+}
+
+.fc-btn.next {
+    right: 12px;
+}
 
 @media (max-width: 768px) {
-    .footer-carousel { width: 420px; height: 160px; }
+    .footer-carousel {
+        width: 420px;
+        height: 160px;
+    }
+
+    /* reduce main carousel on smaller phones */
+    .carousel {
+        height: 300px;
+    }
 }
 
 @media (max-width: 480px) {
-    .footer-carousel { height: 120px; }
-    .fc-btn { width: 36px; height: 36px; font-size: 18px; }
+    .footer-carousel {
+        height: 120px;
+    }
+
+    .fc-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
 }
